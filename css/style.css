@@ -1,0 +1,141 @@
+/* Variables */
+:root {
+  --bg-color: white;
+  --border-color: rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+* {
+  font-family: Georgia, "Times New Roman", Times, serif, monospace;
+}
+
+hr {
+  border: 0;
+  width: 3rem;
+  border-top: dashed 0.125rem rgba(0, 0, 0, 0.42);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.important {
+  color:tomato;
+  font-weight: bold;
+}
+
+#sort-hint {
+  visibility: hidden;
+  display: none;
+}
+
+#sort-hint h2 {
+  display: inline-block;
+}
+
+.atom-symbol {
+  display: inline-block;
+  font-size: 1.188rem;
+  height: 1.188rem;
+  width: 1rem;
+  margin-top: -0.5rem;
+  text-align: center;
+}
+
+.button-return {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.button-return a {
+  text-decoration: none;
+}
+
+.comment {
+  font-style: italic;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Readability */
+
+.readability {
+  max-width: 42rem;
+  margin: auto;
+}
+
+.sub-title {
+  font-size: 1.313rem;
+  font-weight: normal;
+  border-bottom: dashed 0.125rem rgba(0, 0, 0, 0.21);
+  padding-bottom: 1.37rem;
+}
+
+.asterisk {
+  text-decoration: none;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.quote {
+  text-align: left;
+  border-left: 0.125rem dashed grey;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+.readability img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.readability td {
+  vertical-align: top;
+}
+
+.readability a {
+  /* https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.readability iframe {
+  display: block;
+}
+
+.readability video {
+  max-width: 42rem;
+  width: 100%;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+
+.image {
+  cursor: nesw-resize;
+}
+
+.no-script-warning {
+  position: fixed;
+  text-align: center;
+  font-family: monospace;
+  font-size: 0.7rem;
+  margin-top: -0.5rem;
+  width: 100%;
+  z-index: 30;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+
+#title {
+  text-align: center;
+}
+
+#title-part {
+  font-weight: normal;
+}
