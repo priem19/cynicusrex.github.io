@@ -38,6 +38,13 @@ body {
   display: inline-block;
 }
 
+#body-shot {
+  margin-right: 1rem;
+  float: left;
+  width: 3.6rem;
+  cursor: zoom-in;
+}
+
 .intro {
   text-align: justify;
 }
