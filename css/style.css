@@ -30,17 +30,16 @@ body {
   font-weight: normal;
 }
 
-#title-quote {
-  font-weight: normal;
-  text-align: center;
-}
-
 #navbar {
   text-align: center;
 }
 
 #navbar h2 {
   display: inline-block;
+}
+
+.intro {
+  text-align: justify;
 }
 
 #blog li {
