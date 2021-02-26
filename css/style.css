@@ -47,6 +47,13 @@ body {
   text-align: left;
 }
 
+#outro-video {
+  margin: auto;
+}
+
+#outro-lyrics {
+  text-align: center;
+}
 /*———————————————————————————————————————————————————————————————*/
 /* Readability */
 
