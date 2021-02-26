@@ -1,60 +1,50 @@
 /* Variables */
 :root {
-  --bg-color: white;
+  --bg-color: antiquewhite;
   --border-color: rgba(0, 0, 0, 0.25);
+}
+
+/*———————————————————————————————————————————————————————————————*/
+
+* {
+  font-family: Georgia, "Times New Roman", Times, serif, monospace;
 }
 
 body {
   background-color: var(--bg-color);
 }
 
-* {
-  font-family: Georgia, "Times New Roman", Times, serif, monospace;
+/* .image {
+  cursor: nesw-resize;
+} */
+
+/*———————————————————————————————————————————————————————————————*/
+
+#title {
+  text-align: center;
+  color: black;
 }
 
-hr {
-  border: 0;
-  width: 3rem;
-  border-top: dashed 0.125rem rgba(0, 0, 0, 0.42);
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+#sub-title {
+  text-align: center;
+  font-weight: normal;
 }
 
-.important {
-  color:tomato;
-  font-weight: bold;
-}
-
-#sort-hint {
-  visibility: hidden;
-  display: none;
-}
-
-#sort-hint h2 {
-  display: inline-block;
-}
-
-.atom-symbol {
-  display: inline-block;
-  font-size: 1.188rem;
-  height: 1.188rem;
-  width: 1rem;
-  margin-top: -0.5rem;
+#title-quote {
+  font-weight: normal;
   text-align: center;
 }
 
-.button-return {
-  margin-top: 1rem;
+#navbar {
   text-align: center;
-  font-size: 1.75rem;
 }
 
-.button-return a {
-  text-decoration: none;
+#navbar h2 {
+  display: inline-block;
 }
 
-.comment {
-  font-style: italic;
+#blog li {
+  text-align: left;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -114,28 +104,305 @@ hr {
   width: 100%;
 }
 
-/*———————————————————————————————————————————————————————————————*/
-
-.image {
-  cursor: nesw-resize;
-}
-
-.no-script-warning {
-  position: fixed;
+.button-return {
+  margin-top: 1rem;
   text-align: center;
-  font-family: monospace;
-  font-size: 0.7rem;
-  margin-top: -0.5rem;
-  width: 100%;
-  z-index: 30;
+  font-size: 1.75rem;
+}
+
+.button-return a {
+  text-decoration: none;
+}
+
+.comment {
+  font-style: italic;
+}
+
+.readability hr {
+  border: 0;
+  width: 3rem;
+  border-top: dashed 0.125rem rgba(0, 0, 0, 0.42);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
+/* blog */
 
-#title {
+/*———————————————————————————————————————————————————————————————*/
+/* profile */
+
+#profile-page h1, #profile-page h2 { font-size: 1.125rem; }
+
+#profile-menu h1, #profile-menu h2 { display: inline; }
+
+#profile-menu {
+  max-width: 73rem;
+  min-height: 7rem; /* To fit butterfly. */
+  margin: auto;
+}
+
+#profilepic {
+  float: left;
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+#profile-menu div {
+  display: block;
+}
+
+#butterfly img {
+  width: 4.56rem;
+  height: 4.31rem;
+}
+
+/* Two :not selectors: https://stackoverflow.com/a/5684168 */
+#contact:target a {
+  animation: backlight 6s normal;
+}
+
+#butterfly-container {
+  height: 7rem; /* To prevent it drawing above text. */
+  float: right;
+}
+
+@keyframes translateButterfly {
+  from {
+    margin-top: -0.125rem;
+  }
+  to {
+    margin-top: 0.5rem;
+  }
+}
+
+@keyframes rotateButterfly {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(7deg);
+  }
+}
+
+#butterfly {
+  animation: translateButterfly 0.42s, rotateButterfly 0.7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  text-align: center;
+  font-size: 0.625rem;
+  float: right;
+  text-decoration: none;
+  color: black;
+}
+
+#profile-quotes-container {
   text-align: center;
 }
 
-#title-part {
+#profile-quotes-header {
+  margin-bottom: 0.5rem;
+}
+
+#profile-quotes-header h2 {
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+#profile-quotes-header h2, #commandments {
+  display: inline;
+}
+
+#commandments {
+  font-size: 0.85rem;
   font-weight: normal;
+}
+
+#commandments span {
+  text-decoration: line-through;
+}
+
+.profile-quote {
+  border-top: 0.06rem dashed var(--border-color);
+  text-align: left;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+@media screen and (max-width: 39rem) {
+  #profile-menu-text div, #profile-quotes-container {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 59.063rem) {
+  .profile-quote {
+    display: block;
+  }
+
+  #profile-quotes-header {
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
+  #profile-media-container {
+    margin-top: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 59.063rem) {
+  .profile-quote {
+    display: inline-block;
+    width: 25.5rem;
+    vertical-align: top;
+  }
+}
+
+@media screen and (min-width: 120rem) {
+  .profile-quote {
+    display: inline-block;
+    width: 29rem;
+    vertical-align: top;
+  }
+}
+
+@media (pointer:none), (pointer:coarse) {
+  @media screen and (orientation: portrait), (orientation: landscape) {
+    #profile-menu, .profile-quote {
+      font-size: 0.85rem;
+    }
+
+    #profilepic {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+
+    #butterfly-container img {
+      width: 3.56rem;
+      height: 3.36rem;
+    }
+
+    #butterfly {
+      font-size: 0.5rem;
+    }
+
+    #butterfly-container {
+      height: 6rem;
+    }
+  }
+}
+
+.profile-quote:hover {
+  background-color: white;
+}
+
+.quote-year {
+  font-size: 0.75rem;
+}
+
+.quote-year {
+  display: inline;
+}
+
+#profile-quotes-container a {
+  text-decoration: none;
+}
+
+#profile-media-container {
+  text-align: center;
+}
+
+#profile-media-container div {
+  display: inline-block;
+}
+
+#profile-media-container img {
+  height: 11.25rem;  
+}
+
+#lichess-puzzle iframe {
+  height: 11.25rem;  
+  width: 8.615rem;
+}
+
+.vimeo iframe {
+  width: 19.875rem;
+  height: 11.25rem;
+}
+
+/* https://fettblog.eu/blog/2013/06/16/preserving-aspect-ratio-for-embedded-iframes/ */
+#khan {
+  position: relative;
+  width: 85%;
+  height: 0;
+  padding-bottom: 48%;
+}
+
+#khan iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; bottom: 0;
+}
+
+#khan img {
+  width: 100%;
+  height: auto;
+}
+
+@media (pointer:none), (pointer:coarse) {
+  @media screen and (max-width: 47rem) and (orientation: portrait) {
+
+    #profile-media-container {
+      margin-top: 0.5rem;
+    }
+
+    #profile-media-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    #lichess-puzzle {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 111%;
+    }
+
+    #profile-page .youtube-player {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 60%;
+    }
+
+    .vimeo {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.6%;
+    }
+
+    #lichess-puzzle iframe, .youtube-player iframe, .vimeo iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0; top: 0;
+    }
+
+    #khan {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.22%;
+    }
+    
+    #khan iframe {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0; bottom: 0;
+    }
+  }
 }

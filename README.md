@@ -1,1 +1,2 @@
-# cynicusrex
+# cynicusrex.com
+# cynicusrex.org
