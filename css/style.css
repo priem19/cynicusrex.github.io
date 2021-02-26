@@ -408,6 +408,28 @@ body {
 }
 
 /*———————————————————————————————————————————————————————————————*/
+/* software */
+
+#setup-page {
+  text-align: center;
+}
+
+#setup-page li {
+  text-align: left;
+}
+
+#setup-page div {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 0.5rem;
+  max-width: 29rem;
+}
+
+#setup-page h2 {
+  border-bottom: 0.06rem dashed var(--border-color);
+}
+
+/*———————————————————————————————————————————————————————————————*/
 /* Light YouTube Embeds by @labnol */
 /* Web: http://labnol.org/?p=27941 */
 
