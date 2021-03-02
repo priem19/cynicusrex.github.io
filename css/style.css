@@ -295,18 +295,22 @@ h1 {
 /*———————————————————————————————————————————————————————————————*/
 /* Portfolio */
 
+#portfolio-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
 #portfolio-page img {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 0.25rem;
 }
 
-#thesis-jan img, #thesis-vladie img {
-  height: 20rem;
+#thesis-jan img {
+  height: 20.5rem;
 }
 
 #thesis-vladie img {
-  height: 19rem;
+  height: 19.5rem;
 }
 
 #portfolio-page iframe {
@@ -345,7 +349,7 @@ h1 {
 }
 
 #city-scene img {
-  height: 7.7rem;
+  height: 7.75rem;
 }
 
 #dm-vault img {
