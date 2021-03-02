@@ -144,26 +144,22 @@ body {
 }
 
 /*———————————————————————————————————————————————————————————————*/
-/* profile */
+/* bio */
 
-#profile-page h1, #profile-page h2 { font-size: 1.125rem; }
-
-#profile-menu h1, #profile-menu h2 { display: inline; }
-
-#profile-menu {
-  max-width: 73rem;
-  min-height: 7rem; /* To fit butterfly. */
-  margin: auto;
+#contact-info, #bio-head, #contact-info img {
+  display: inline;
 }
 
-#profilepic {
-  float: left;
-  width: 6.25rem;
-  height: 6.25rem;
+#bio-page h2 {
+  border-bottom: black 1px solid;
 }
 
-#profile-menu div {
-  display: block;
+#contact-info {
+  font-size: 2rem;
+}
+
+#contact-info img {
+  height: 1.2rem;
 }
 
 #butterfly img {
@@ -171,14 +167,9 @@ body {
   height: 4.31rem;
 }
 
-/* Two :not selectors: https://stackoverflow.com/a/5684168 */
-#contact:target a {
-  animation: backlight 6s normal;
-}
-
 #butterfly-container {
-  height: 7rem; /* To prevent it drawing above text. */
-  float: right;
+  height: 9rem; /* To prevent it drawing above text. */
+  text-align: center;
 }
 
 @keyframes translateButterfly {
@@ -206,219 +197,21 @@ body {
   animation-timing-function: ease-in-out;
   text-align: center;
   font-size: 0.625rem;
-  float: right;
   text-decoration: none;
   color: black;
-}
-
-#profile-quotes-container {
-  text-align: center;
-}
-
-#profile-quotes-header {
-  margin-bottom: 0.5rem;
-}
-
-#profile-quotes-header h2 {
-  margin-bottom: 0.5rem;
-  text-decoration: underline;
-}
-
-#profile-quotes-header h2, #commandments {
-  display: inline;
-}
-
-#commandments {
-  font-size: 0.85rem;
-  font-weight: normal;
-}
-
-#commandments span {
-  text-decoration: line-through;
-}
-
-.profile-quote {
-  border-top: 0.06rem dashed var(--border-color);
-  text-align: left;
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
-}
-
-@media screen and (max-width: 39rem) {
-  #profile-menu-text div, #profile-quotes-container {
-    margin-top: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 59.063rem) {
-  .profile-quote {
-    display: block;
-  }
-
-  #profile-quotes-header {
-    text-align: left;
-    margin-top: 0.5rem;
-  }
-
-  #profile-media-container {
-    margin-top: 0.5rem;
-  }
-}
-
-@media screen and (min-width: 59.063rem) {
-  .profile-quote {
-    display: inline-block;
-    width: 25.5rem;
-    vertical-align: top;
-  }
-}
-
-@media screen and (min-width: 120rem) {
-  .profile-quote {
-    display: inline-block;
-    width: 29rem;
-    vertical-align: top;
-  }
-}
-
-@media (pointer:none), (pointer:coarse) {
-  @media screen and (orientation: portrait), (orientation: landscape) {
-    #profile-menu, .profile-quote {
-      font-size: 0.85rem;
-    }
-
-    #profilepic {
-      width: 4.5rem;
-      height: 4.5rem;
-    }
-
-    #butterfly-container img {
-      width: 3.56rem;
-      height: 3.36rem;
-    }
-
-    #butterfly {
-      font-size: 0.5rem;
-    }
-
-    #butterfly-container {
-      height: 6rem;
-    }
-  }
-}
-
-.profile-quote:hover {
-  background-color: white;
-}
-
-.quote-year {
-  font-size: 0.75rem;
-}
-
-.quote-year {
-  display: inline;
-}
-
-#profile-quotes-container a {
-  text-decoration: none;
-}
-
-#profile-media-container {
-  text-align: center;
-}
-
-#profile-media-container div {
   display: inline-block;
 }
 
-#profile-media-container img {
-  height: 11.25rem;  
+/*———————————————————————————————————————————————————————————————*/
+/* quotes */
+
+.quote-year {
+  font-size: 0.75rem;
+  display: inline;
 }
 
-#lichess-puzzle iframe {
-  height: 11.25rem;  
-  width: 8.615rem;
-}
-
-.vimeo iframe {
-  width: 19.875rem;
-  height: 11.25rem;
-}
-
-/* https://fettblog.eu/blog/2013/06/16/preserving-aspect-ratio-for-embedded-iframes/ */
-#khan {
-  position: relative;
-  width: 85%;
-  height: 0;
-  padding-bottom: 48%;
-}
-
-#khan iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0; bottom: 0;
-}
-
-#khan img {
-  width: 100%;
-  height: auto;
-}
-
-@media (pointer:none), (pointer:coarse) {
-  @media screen and (max-width: 47rem) and (orientation: portrait) {
-
-    #profile-media-container {
-      margin-top: 0.5rem;
-    }
-
-    #profile-media-container img {
-      width: 100%;
-      height: auto;
-    }
-
-    #lichess-puzzle {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-bottom: 111%;
-    }
-
-    #profile-page .youtube-player {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-bottom: 60%;
-    }
-
-    .vimeo {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.6%;
-    }
-
-    #lichess-puzzle iframe, .youtube-player iframe, .vimeo iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0; top: 0;
-    }
-
-    #khan {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.22%;
-    }
-    
-    #khan iframe {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0; bottom: 0;
-    }
-  }
+#quotes-page a {
+  text-decoration: none;
 }
 
 /*———————————————————————————————————————————————————————————————*/
