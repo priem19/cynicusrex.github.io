@@ -162,6 +162,12 @@ body {
   height: 1.2rem;
 }
 
+#exp-container, #edu-container {
+  display: inline-block;
+  max-width: 20rem;
+  vertical-align: top;
+}
+
 #butterfly img {
   width: 4.56rem;
   height: 4.31rem;
