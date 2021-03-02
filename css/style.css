@@ -267,3 +267,72 @@ body {
 .mastodon-comment-content p:first-of-type {
   margin-top: 0.5rem;
 }
+
+/*———————————————————————————————————————————————————————————————*/
+/* Portfolio */
+
+#portfolio-page img {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0.25rem;
+}
+
+#thesis-jan img, #thesis-vladie img {
+  height: 20rem;
+}
+
+#thesis-vladie img {
+  height: 19rem;
+}
+
+#portfolio-page iframe {
+  margin-bottom: 0.25rem;
+}
+
+#amigara-screenshots img {
+  height: 5.52rem;
+}
+
+#scifi-props img {
+  height: 11.7rem;
+}
+
+#scifi-props img:last-child {
+  width: 100%;
+  height: auto;
+}
+
+#blarney-castle img:first-child {
+  width: 100%;
+  height: auto;
+}
+
+#blarney-castle img {
+  height: 9.5rem;
+}
+
+#stevens-mod img {
+  height: 9rem;
+}
+
+#city-scene img:first-child {
+  width: 100%;
+  height: auto;
+}
+
+#city-scene img {
+  height: 7.7rem;
+}
+
+#dm-vault img {
+  height: 10.8rem;
+}
+
+#tractor-wip img:first-child {
+  width: 40rem;
+  height: auto;
+}
+
+#tractor-wip img {
+  height: 11.6rem;
+}
