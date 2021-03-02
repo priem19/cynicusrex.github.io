@@ -146,6 +146,10 @@ body {
   display: inline;
 }
 
+#bio-head {
+  font-size: 1.8rem;
+}
+
 #bio-page h2 {
   border-bottom: black 1px solid;
 }
