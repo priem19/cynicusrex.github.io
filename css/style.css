@@ -68,8 +68,6 @@ body {
 .sub-title {
   font-size: 1.313rem;
   font-weight: normal;
-  border-bottom: dashed 0.125rem rgba(0, 0, 0, 0.21);
-  padding-bottom: 1.37rem;
 }
 
 .asterisk {
@@ -128,7 +126,7 @@ body {
   font-style: italic;
 }
 
-.readability hr {
+.hr-short {
   border: 0;
   width: 3rem;
   border-top: dashed 0.125rem rgba(0, 0, 0, 0.42);
@@ -136,12 +134,15 @@ body {
   margin-bottom: 3rem;
 }
 
+.hr-long {
+  border: 0;
+  border-bottom: dashed 0.125rem rgba(0, 0, 0, 0.21);
+  /* padding-bottom: 1.37rem; */
+}
+
 /*———————————————————————————————————————————————————————————————*/
 /* blog */
 
-#blog p {
-  text-align: center;
-}
 
 /*———————————————————————————————————————————————————————————————*/
 /* bio */
