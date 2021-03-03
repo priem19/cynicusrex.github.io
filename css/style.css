@@ -131,6 +131,12 @@ h1 {
   font-style: italic;
 }
 
+.end {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem;
+}
+
 .hr-short {
   border: 0;
   width: 3rem;
