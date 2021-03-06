@@ -344,7 +344,7 @@ h1 {
 }
 
 #amigara-screenshots img {
-  height: 5.52rem;
+  height: 7.75rem;
 }
 
 #scifi-props img {
@@ -363,6 +363,11 @@ h1 {
 
 #blarney-castle img {
   height: 9.5rem;
+}
+
+#stevens-mod img:nth-child(1), #stevens-mod img:nth-child(2) {
+  width: 100%;
+  height: auto;
 }
 
 #stevens-mod img {
@@ -389,4 +394,13 @@ h1 {
 
 #tractor-wip img {
   height: 11.6rem;
+}
+
+@media (pointer:none), (pointer:coarse) {
+  @media screen and (orientation: portrait){
+    #portfolio-page img, #portfolio-page iframe {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
