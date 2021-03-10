@@ -23,6 +23,7 @@ h1 {
   text-align: center;
 }
 
+
 /*———————————————————————————————————————————————————————————————*/
 
 #cr-title {
@@ -112,6 +113,15 @@ h1 {
   display: block;
 }
 
+@media (pointer:none), (pointer:coarse) {
+  @media screen and (orientation: portrait){
+     iframe {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
 .readability video {
   max-width: 42rem;
   width: 100%;
@@ -154,6 +164,15 @@ h1 {
   font-size: small;
   font-family: monospace;
   vertical-align: text-top;
+}
+
+.source a {
+  text-decoration: none
+}
+
+
+li ul li {
+  list-style-type: lower-alpha;
 }
 
 .footnote {
