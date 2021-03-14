@@ -5,6 +5,7 @@
 }
 
 /*———————————————————————————————————————————————————————————————*/
+/* Global */
 
 * {
   font-family: serif, Georgia, "Times New Roman", Times;
@@ -18,14 +19,10 @@ h1 {
   text-align: center;
 }
 
-#footer {
-  color: rgba(0,0,0,0);
-}
-
-
 /*———————————————————————————————————————————————————————————————*/
+/* Index */
 
-#cr-title, #cr-sub-title, #navbar, #footer {
+#cr-sub-title, #navbar, #footer {
   text-align: center;
 }
 
@@ -45,8 +42,257 @@ h1 {
   text-align: justify;
 }
 
+#footer {
+  color: rgba(0,0,0,0);
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* beggar */
+
+#beggar-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* bio */
+
+#bio-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+#bio-page .sub-title {
+  text-align: center;
+}
+
+#exp-container, #edu-container {
+  display: inline-block;
+  max-width: 20rem;
+  vertical-align: top;
+}
+
+#contact-info img {
+  display: inline;
+  height: 1.2rem;
+}
+
+#butterfly img {
+  width: 4.56rem;
+  height: 4.31rem;
+}
+
+#butterfly-container {
+  height: 9rem; /* Prevents it from drawing above text. */
+  text-align: center;
+}
+
+@keyframes translateButterfly {
+  from {
+    margin-top: -0.125rem;
+  }
+  to {
+    margin-top: 0.5rem;
+  }
+}
+
+@keyframes rotateButterfly {
+  from {
+    transform: rotate(-3deg);
+  }
+  to {
+    transform: rotate(7deg);
+  }
+}
+
+#butterfly {
+  animation: translateButterfly 0.42s, rotateButterfly 0.7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  text-align: center;
+  font-size: 0.625rem;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* blog */
+
+#blog h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+#blog h3 {
+  margin-bottom: 0;
+}
+
+#blog p {
+  margin-top: 0;
+}
+
 #blog li {
   text-align: left;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* quotes */
+
+#quotes-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+.quote-year {
+  font-size: 0.75rem;
+  display: inline;
+}
+
+#quotes-page a {
+  text-decoration: none;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Software */
+
+#setup-page {
+  text-align: left;
+}
+
+#setup-page li {
+  text-align: left;
+}
+
+#setup-page div {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 0.5rem;
+  max-width: 29rem;
+}
+
+#setup-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Portfolio */
+
+#portfolio-page h2 {
+  border-bottom: 0.06rem solid grey;
+}
+
+#portfolio-page img {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 0.25rem;
+}
+
+#thesis-jan img {
+  height: 20.5rem;
+}
+
+#thesis-vladie img {
+  height: 19.5rem;
+}
+
+#portfolio-page iframe {
+  margin-bottom: 0.25rem;
+}
+
+#amigara-screenshots img {
+  height: 7.75rem;
+}
+
+#scifi-props img {
+  height: 11.7rem;
+}
+
+#scifi-props img:last-child {
+  width: 100%;
+  height: auto;
+}
+
+#blarney-castle img:first-child {
+  width: 100%;
+  height: auto;
+}
+
+#blarney-castle img {
+  height: 9.5rem;
+}
+
+#stevens-mod img:nth-child(1), #stevens-mod img:nth-child(2) {
+  width: 100%;
+  height: auto;
+}
+
+#stevens-mod img {
+  height: 9rem;
+}
+
+#city-scene img:first-child {
+  width: 100%;
+  height: auto;
+}
+
+#city-scene img {
+  height: 7.75rem;
+}
+
+#dm-vault img {
+  height: 10.8rem;
+}
+
+#tractor-wip img:first-child {
+  width: 40rem;
+  height: auto;
+}
+
+#tractor-wip img {
+  height: 11.6rem;
+}
+
+@media (pointer:none), (pointer:coarse) {
+  @media screen and (orientation: portrait){
+    #portfolio-page img, #portfolio-page iframe {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+/*———————————————————————————————————————————————————————————————*/
+/* Comment section */
+
+.mastodon-comment {
+  position: relative;
+  width: 100%;
+  min-height: 3.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.comment-avatar {
+  width: 4.313rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+.comment-avatar img {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.comment-content {
+  padding-left: 4.313rem;
+}
+
+.comment-author img {
+  float: left;
+  margin-right: 0.125rem;
+}
+
+.mastodon-comment-content p:first-of-type {
+  margin-top: 0.5rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -156,256 +402,10 @@ h1 {
   text-decoration: none
 }
 
-
 li ul li {
   list-style-type: lower-alpha;
 }
 
 .footnote {
   margin: 0;
-}
-
-/*———————————————————————————————————————————————————————————————*/
-/* beggar */
-
-#beggar-page h2 {
-  border-bottom: 0.06rem solid grey;
-}
-
-/*———————————————————————————————————————————————————————————————*/
-/* blog */
-
-#blog h2 {
-  border-bottom: 0.06rem solid grey;
-}
-
-#blog h3 {
-  margin-bottom: 0;
-}
-
-#blog p {
-  margin-top: 0;
-}
-
-/*———————————————————————————————————————————————————————————————*/
-/* bio */
-
-#bio-page h2 {
-  border-bottom: 0.06rem solid grey;
-}
-
-#bio-page .sub-title {
-  text-align: center;
-}
-
-#exp-container, #edu-container {
-  display: inline-block;
-  max-width: 20rem;
-  vertical-align: top;
-}
-
-#contact-info img {
-  display: inline;
-  height: 1.2rem;
-}
-
-#butterfly img {
-  width: 4.56rem;
-  height: 4.31rem;
-}
-
-#butterfly-container {
-  height: 9rem; /* To prevent it drawing above text. */
-  text-align: center;
-}
-
-@keyframes translateButterfly {
-  from {
-    margin-top: -0.125rem;
-  }
-  to {
-    margin-top: 0.5rem;
-  }
-}
-
-@keyframes rotateButterfly {
-  from {
-    transform: rotate(-3deg);
-  }
-  to {
-    transform: rotate(7deg);
-  }
-}
-
-#butterfly {
-  animation: translateButterfly 0.42s, rotateButterfly 0.7s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  text-align: center;
-  font-size: 0.625rem;
-  text-decoration: none;
-  color: black;
-  display: inline-block;
-}
-
-/*———————————————————————————————————————————————————————————————*/
-/* quotes */
-
-#quotes-page h2 {
-  border-bottom: 0.06rem solid grey;
-}
-
-.quote-year {
-  font-size: 0.75rem;
-  display: inline;
-}
-
-#quotes-page a {
-  text-decoration: none;
-}
-
-/*———————————————————————————————————————————————————————————————*/
-/* software */
-
-#setup-page {
-  text-align: left;
-}
-
-#setup-page li {
-  text-align: left;
-}
-
-#setup-page div {
-  display: inline-block;
-  vertical-align: text-top;
-  margin-right: 0.5rem;
-  max-width: 29rem;
-}
-
-#setup-page h2 {
-  border-bottom: 0.06rem solid grey;
-}
-
-/*———————————————————————————————————————————————————————————————*/
-/* Comment section */
-
-.mastodon-comment {
-  position: relative;
-  width: 100%;
-  min-height: 3.75rem;
-  margin-bottom: 0.5rem;
-}
-
-.comment-avatar {
-  width: 4.313rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-}
-
-.comment-avatar img {
-  width: 3.75rem;
-  height: 3.75rem;
-}
-
-.comment-content {
-  padding-left: 4.313rem;
-}
-
-.comment-author img {
-  float: left;
-  margin-right: 0.125rem;
-}
-
-.mastodon-comment-content p:first-of-type {
-  margin-top: 0.5rem;
-}
-
-/*———————————————————————————————————————————————————————————————*/
-/* Portfolio */
-
-#portfolio-page h2 {
-  border-bottom: 0.06rem solid grey;
-}
-
-#portfolio-page img {
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 0.25rem;
-}
-
-#thesis-jan img {
-  height: 20.5rem;
-}
-
-#thesis-vladie img {
-  height: 19.5rem;
-}
-
-#portfolio-page iframe {
-  margin-bottom: 0.25rem;
-}
-
-#amigara-screenshots img {
-  height: 7.75rem;
-}
-
-#scifi-props img {
-  height: 11.7rem;
-}
-
-#scifi-props img:last-child {
-  width: 100%;
-  height: auto;
-}
-
-#blarney-castle img:first-child {
-  width: 100%;
-  height: auto;
-}
-
-#blarney-castle img {
-  height: 9.5rem;
-}
-
-#stevens-mod img:nth-child(1), #stevens-mod img:nth-child(2) {
-  width: 100%;
-  height: auto;
-}
-
-#stevens-mod img {
-  height: 9rem;
-}
-
-#city-scene img:first-child {
-  width: 100%;
-  height: auto;
-}
-
-#city-scene img {
-  height: 7.75rem;
-}
-
-#dm-vault img {
-  height: 10.8rem;
-}
-
-#tractor-wip img:first-child {
-  width: 40rem;
-  height: auto;
-}
-
-#tractor-wip img {
-  height: 11.6rem;
-}
-
-@media (pointer:none), (pointer:coarse) {
-  @media screen and (orientation: portrait){
-    #portfolio-page img, #portfolio-page iframe {
-      width: 100%;
-      height: auto;
-    }
-  }
 }
