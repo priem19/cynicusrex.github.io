@@ -18,49 +18,35 @@ h1 {
   text-align: center;
 }
 
-.footer {
-  text-align: center;
+#footer {
   color: rgba(0,0,0,0);
 }
 
 
 /*———————————————————————————————————————————————————————————————*/
 
-#cr-title {
+#cr-title, #cr-sub-title, #navbar, #footer {
   text-align: center;
+}
+
+#cr-title {
   color: black;
 }
 
 #cr-sub-title {
-  text-align: center;
   font-weight: normal;
-}
-
-#navbar {
-  text-align: center;
 }
 
 #navbar h2 {
   display: inline-block;
 }
 
-#body-shot {
-  margin-right: 1rem;
-  float: left;
-  width: 3.6rem;
-  cursor: zoom-in;
-}
-
-.intro {
+#intro {
   text-align: justify;
 }
 
 #blog li {
   text-align: left;
-}
-
-#outro-video {
-  margin: auto;
 }
 
 /*———————————————————————————————————————————————————————————————*/
@@ -141,7 +127,7 @@ h1 {
   font-style: italic;
 }
 
-.end {
+.end-crown {
   font-size: 2rem;
   text-align: center;
   margin: 1.5rem;
