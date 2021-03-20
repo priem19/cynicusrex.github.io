@@ -42,6 +42,16 @@ h1 {
   text-align: justify;
 }
 
+#index-telegram-invite, #index-telegram-invite img {
+  text-align: center;
+}
+
+#index-telegram-invite img {
+  width: 1.2rem;
+  display: inline;
+  margin-bottom: -0.2rem;
+}
+
 #footer {
   color: rgba(0,0,0,0);
   font-size: x-small;
@@ -133,6 +143,12 @@ h1 {
 
 #blog li {
   text-align: left;
+}
+
+#blog-telegram-invite img {
+  width: 1.2rem;
+  display: inline;
+  margin-bottom: -0.2rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
