@@ -214,8 +214,8 @@ h1 {
   margin-bottom: 0.25rem;
 }
 
-#amigara-screenshots img {
-  height: 7.75rem;
+#amigara-screenshots img, #magnolia-screenshots img {
+  height: 7.5rem;
 }
 
 #scifi-props img {
