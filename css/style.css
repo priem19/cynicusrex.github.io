@@ -333,6 +333,12 @@ h1 {
   text-align: right;
 }
 
+.edit-list {
+  text-decoration: underline;
+  cursor: progress;
+  color: darkslategrey;
+}
+
 .quote {
   text-align: left;
   border-left: 0.125rem dashed grey;
