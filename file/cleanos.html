@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>EndeavourOS</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel="stylesheet" type='text/css' media='screen' href="../css/style.css">
+  <link rel="canonical" href="https://www.cynicusrex.com/file/X.html">
+  <meta name="description" content="The best Linux distribution I ever used: EndeavourOS.">
+  <meta name="keywords" content="EndeavourOS, EndeavourOS, Arch Linux">
+  <meta name="author" content="Angelino Desmet">
+</head>
+
+<body>
+  <div class="readability">
+    <h1>How to install Linux.</h1>
+    <h2>EndeavourOS</h2>
+    <p>An Arch based lightweight Linux operating system (OS).</p>
+    <ol>
+      <li>Backup everything you don’t want to lose on a separate medium. It helps if you have a second computer if something breaks and you can't do anything on your current machine.</li>
+      <li><a href="https://endeavouros.com/latest-release/">Download the OS</a> and <a href="https://discovery.endeavouros.com/installation/create-install-media-usb-key/2021/03/">create install media (USB key)</a>.</li>
+      <li>To launch the OS from the USB key: reboot and press F2 or DELETE during the startup to edit the boot settings. Change boot device to USB instead of the hard drive. (When the OS is installed, revert this after the reboot.)</li>
+      <li><a href="https://discovery.endeavouros.com/installation/installation-intro/2021/03/">Install the OS.</a></li>
+    </ol>
+
+    <h2>Packages.</h2>
+    <p>I have certain set of software I install on every new machine. Here follows a list I copy paste so I don't have to install everything individually each time.</p>
+    <ul>
+      <li>LTS Kernel, Vivaldi browser & codecs, etc.:<code>sudo pacman -Syu linux-lts vivaldi vivaldi-ffmpeg-codecs telegram-desktop xfce4-systemload-plugin lyx yakuake xscreensaver gufw torbrowser-launcher libreoffice-still hunspell hunspell-nl hunspell-en_US transmission-gtk mpv clementine speedcrunch gnome-disk-utility calibre redshift noto-fonts-emoji python-pip yay</code></li>
+      <li><a href="https://mega.nz/sync">MEGA Desktop App</a>. Install the .zst file using the command: <code>sudo pacman -U megasync-x86_64.pkg.tar.zst</code></li>
+      <li><a href="https://github.com/hectorm/hblock#installation">hBlock</a>. “The latest available version can also be installed manually by running the following commands: curl -o /tmp/hblock 'https://raw.githubusercontent.com/hectorm/hblock/…”</li>
+      <li>VSCodium, AutoKey, Corsair driver: <code>yay -S vscodium-bin autokey-git ckb-next</code></li>
+      <li>Subliminal (<a href="https://wiki.archlinux.org/index.php/Mpv#Scripts">script</a> for easy subtitles in MPV): <code>pip install subliminal</code></li>
+      <li>Removal of some defaults: <code>sudo pacman -R xfce4-screensaver</code></li>
+    </ul>
+    <p class="button-return"><a href="../blog.html">←</a> <a href="/">⌂</a></p>
+  </div>
+  
+</body>
+</html>
