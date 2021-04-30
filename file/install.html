@@ -3,17 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Arch clean install</title>
-  <meta name="title" content="Arch clean install">
-  <meta name="description" content="Arch clean install">
+  <title>Arch Linux install proces</title>
+  <meta name="title" content="Arch Linux install proces">
+  <meta name="description" content="Arch Linux install proces">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="keywords" content="">
   <meta name="author" content="Angelino Desmet">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.cynicusrex.com/file/cleanos.html">
-  <meta property="og:title" content="Arch clean install">
-  <meta property="og:description" content="Arch clean install">
+  <meta property="og:title" content="Arch Linux install proces">
+  <meta property="og:description" content="Arch Linux install proces">
   <meta property="og:image" content="https://www.cynicusrex.com/img/crown.png">
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="128" />
@@ -21,8 +21,8 @@
 
   <meta property="twitter:card" content="summary">
   <meta property="twitter:url" content="https://www.cynicusrex.com/file/cleanos.html">
-  <meta property="twitter:title" content="Arch clean install">
-  <meta property="twitter:description" content="Arch clean install">
+  <meta property="twitter:title" content="Arch Linux install proces">
+  <meta property="twitter:description" content="Arch Linux install proces">
   <meta property="twitter:image" content="https://www.cynicusrex.com/img/crown.png">
 
   <link rel="icon" type="image/png" href="../img/favicon-128.png">
@@ -32,7 +32,7 @@
 
 <body>
   <div class="readability">
-    <h1>How to install Linux.</h1>
+    <h1>Arch Linux install proces.</h1>
     <h2>EndeavourOS</h2>
     <p>An Arch based lightweight Linux operating system (OS).</p>
     <ol>
@@ -45,12 +45,22 @@
     <h2>Packages.</h2>
     <p>I have certain set of software I install on every new machine. Here follows a list I copy paste so I don't have to install everything individually each time.</p>
     <ul>
-      <li>LTS Kernel, Vivaldi browser & codecs, etc.:<code>sudo pacman -Syu linux-lts vivaldi vivaldi-ffmpeg-codecs telegram-desktop xfce4-systemload-plugin lyx yakuake xscreensaver gufw torbrowser-launcher libreoffice-still hunspell hunspell-nl hunspell-en_US transmission-gtk mpv clementine speedcrunch gnome-disk-utility calibre redshift noto-fonts-emoji python-pip yay</code></li>
+      <li>LTS Kernel, Vivaldi browser & codecs, etc.:<code>sudo pacman -Syu linux-lts vivaldi vivaldi-ffmpeg-codecs telegram-desktop xfce4-systemload-plugin lyx xscreensaver gufw torbrowser-launcher libreoffice-still hunspell hunspell-nl hunspell-en_US mpv speedcrunch gnome-disk-utility redshift noto-fonts-emoji catfish python-pip yay</code></li>
+      <li>Optional: <code>sudo pacman -Syu gimp kdenlive yakuake transmission-gtk clementine calibre</code></li>
       <li><a href="https://mega.nz/sync">MEGA Desktop App</a>. Install the .zst file using the command: <code>sudo pacman -U megasync-x86_64.pkg.tar.zst</code></li>
-      <li><a href="https://github.com/hectorm/hblock#installation">hBlock</a>. “The latest available version can also be installed manually by running the following commands: curl -o /tmp/hblock 'https://raw.githubusercontent.com/hectorm/hblock/…”</li>
-      <li>VSCodium, AutoKey, Corsair driver: <code>yay -S vscodium-bin autokey-git ckb-next</code></li>
+      <li>VSCodium, AutoKey, Corsair driver: <code>yay -Syu vscodium-bin autokey-gtk ckb-next hblock</code></li>
       <li>Subliminal (<a href="https://wiki.archlinux.org/index.php/Mpv#Scripts">script</a> for easy subtitles in MPV): <code>pip install subliminal</code></li>
       <li>Removal of some defaults: <code>sudo pacman -R xfce4-screensaver</code></li>
+    </ul>
+
+    <h2>Settings.</h2>
+    <p>Whisker, panel, search actions, DNS, Vivaldi, desktop, autokey, redshift, ckb-next, mkv scripts</p>
+
+    <h2><a href="https://averagelinuxuser.com/clean-arch-linux/">Clean</a>.</h2>
+    <ul>
+      <li>Cache: <code>sudo pacman -Sc</code></li>
+      <li>Unused: <code>sudo pacman -Rns $(pacman -Qtdq)</code></li>
+      <li>Home: <code>rm -rf ~/.cache/*</code></li>
     </ul>
     <p class="button-return"><a href="../blog.html">←</a> <a href="/">⌂</a></p>
   </div>
