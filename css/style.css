@@ -86,11 +86,6 @@ code {
   vertical-align: top;
 }
 
-#contact-info img {
-  display: inline;
-  height: 1.2rem;
-}
-
 #butterfly img {
   width: 4.56rem;
   height: 4.31rem;
@@ -148,12 +143,6 @@ code {
 
 #blog li {
   text-align: left;
-}
-
-#blog-telegram-invite img {
-  width: 1.2rem;
-  display: inline;
-  margin-bottom: -0.2rem;
 }
 
 /*———————————————————————————————————————————————————————————————*/
