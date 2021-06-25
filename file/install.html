@@ -44,17 +44,29 @@
 
     <h2>Packages.</h2>
     <p>I have certain set of software I install on every new machine. Here follows a list I copy paste so I don't have to install everything individually each time.</p>
-    <ul>
+    <ol>
       <li>LTS Kernel, Vivaldi browser & codecs, etc.:<code>sudo pacman -Syu linux-lts vivaldi vivaldi-ffmpeg-codecs telegram-desktop anki xfce4-systemload-plugin lyx xscreensaver gufw torbrowser-launcher libreoffice-still hunspell hunspell-nl hunspell-en_US mpv speedcrunch gnome-disk-utility redshift noto-fonts-emoji catfish python-pip</code></li>
+      <li>Install the <a href="https://mega.nz/sync">MEGA Desktop Client</a> .zst file using the command: <code>sudo pacman -U megasync-x86_64.pkg.tar.zst</code></li>
       <li>Optional: <code>sudo pacman -Syu kdenlive yakuake clementine calibre</code></li>
-      <li><a href="https://mega.nz/sync">MEGA Desktop App</a>. Install the .zst file using the command: <code>sudo pacman -U megasync-x86_64.pkg.tar.zst</code></li>
-      <li>VSCodium, AutoKey, Corsair driver: <code>yay -Syu vscodium-bin autokey-gtk ckb-next hblock</code></li>
+      <li>VSCodium, AutoKey, Corsair driver: <code>yay -Syu vscodium-bin autokey-gtk ckb-next hblock</code><br>
+      run <code>hblock</code> in commandline to install, and run <code>cat /etc/hosts</code> to <a href="https://github.com/hectorm/hblock#installation">verify</a>.</li>
       <li>Subliminal (<a href="https://wiki.archlinux.org/index.php/Mpv#Scripts">script</a> for easy subtitles in MPV): <code>pip install subliminal</code></li>
       <li>Removal of some defaults: <code>sudo pacman -R xfce4-screensaver</code></li>
-    </ul>
+    </ol>
 
     <h2>Settings.</h2>
-    <p>Whisker, panel, search actions, DNS, Vivaldi, desktop, autokey, redshift, ckb-next, mkv scripts</p>
+    <p>Whisker, panel, search actions, DNS, Vivaldi, desktop, autokey, redshift, mkv scripts…</p>
+
+    <h2>ckb-next</h2>
+    <p>ckb-next: <code>+lctrl,+c,-c,-lctrl</code>, <code>+lctrl,+v,-v,-lctrl</code></p>
+
+    <h2>Login commands.</h2>
+    <p>Add the following line to .profile in home directory: <code>msi-keyboard -m normal -c left,off,low -c middle,off,low -c right,off,low</code></p>
+
+    <h2>Steps to reinitialize folder with github after format:</h2>
+    <p><code>cd &ltrepo-folder&gt<br>git init<br>git remote add origin &lturl&gt<br>git fetch<br>git reset origin/master</code>
+    </p>
+    
 
     <h2><a href="https://averagelinuxuser.com/clean-arch-linux/">Clean</a>.</h2>
     <ul>
